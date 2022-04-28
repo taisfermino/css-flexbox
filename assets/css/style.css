@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800;900&display=swap');
+
+:root {
+    --header-height: 3rem;
+    --padding: 2px 2px;
+    --padding-body: 0 20px;
+    --font-size-logo: 20px;
+    --font-size-button: 14px;
+    --font-size-text: 18px;
+    --font-size-title: 32px;
+    --font-size-card: 20px;
+    --font-weight-logo: 800;
+    --font-weight-button: 600;
+    --font-weight-text: 300;
+    --font-weight-title: 900;
+    --font-weight-card: 600;
+    --body-background: #282828;
+    --button-background: #00C39A;
+    --text-color: #FFFFFF;
+    --input-background: #484848;
+    --first-card-background: #2AA9D1;
+    --second-card-background: #D12A52;
+    --third-card-background: #D1702A;
+    --fourth-card-background: #7A48CB;
+    --fifth-card-background: #E9E24C;
+    --sixth-card-background: #8EC099;
+    --seventh-card-background: #E94C4C;
+    --eighth-card-background: #2CC6BC;
+}
+
+body {
+    background-color: var(--body-background);
+    font-family: 'Nunito', sans-serif;
+    height: 80vh;
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+
+main {
+    margin: 0 7rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+}
+
+.header__logo {
+    color: var(--text-color);
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-weight-logo);
+}
+
+
+.button {
+    color: var(--body-background);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    text-align: center;
+    background-color: var(--button-background);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    height: auto;
+    cursor: pointer;
+}
+
+.content__courses {
+    padding-top: 7vh;
+}
+
+.container__input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.courses__subtitle {
+    text-align: center;
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
+}
+
+.courses__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--input-background);
+    width: 500px;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+
+
+.courses__search input {
+    color: var(--text-color);
+    background-color: var(--input-background);
+    border: none;
+    outline: none;
+}
+
+.layers {
+    position: relative;
+    top: 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.layer {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+.row__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin: 10px;
+    padding: 40px 0;
+    text-align: center;
+    font-size: var(--font-size-card);
+    font-weight: var(--font-weight-card);
+    border-radius: 4px;
+
+}
+
+.row__item--double {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 22px;
+}
+
+.color-first {
+    background-color: var(--first-card-background);
+}
+
+.color-second {
+    background-color: var(--second-card-background);
+}
+
+.color-third {
+    background-color: var(--third-card-background);
+}
+
+.color-fourth {
+    background-color: var(--fourth-card-background);
+}
+
+.color-fifth {
+    background-color: var(--fifth-card-background);
+}
+
+.color-sixth {
+    background-color: var(--sixth-card-background);
+}
+
+.color-seventh {
+    background-color: var(--seventh-card-background);
+}
+
+.color-eighth {
+    background-color: var(--eighth-card-background);
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin: 0 1rem;
+    }
+}
